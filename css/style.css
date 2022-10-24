@@ -158,6 +158,7 @@ article {
     float: left;
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 #wrapper #popular article {
@@ -207,6 +208,171 @@ article {
 }
 
 #wrapper a:hover {background-color: #7feb6d;}
+
+/* Стили для странички о нас */
+
+#about_us { 
+    width: 100%;
+    float: left;
+    background-color: #fafafa
+    border-radius: 5px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+#ColumRight { 
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+/* Стили для формы */
+
+form {
+    width: 60%;
+    margin-left: 20%;
+    float: lest;
+}
+
+form label {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    border-radius: 7px;
+    border: 2px solid silver;
+    padding: 5px;
+    float: left;
+    clear:both;
+    margin-bottom: 10px;
+    background-color:#fafafa;
+    width: 40%;
+}
+
+form input: focus, form textarea: focus {border: 2px solid #f58b8b}
+
+form textarea{
+    width: 60%;
+    float: left;
+    clear: both;
+    background-color:#fafafa;
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding: 10px;
+    font-size:1.7em;
+}
+
+form #send {
+    float: left;
+    padding: 10px;
+    background-color:#f37a7a;
+    cursor: pointer;
+    border-radius:5px;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #fff;    
+}
+
+form #send: hover {
+    background-color: bdf37a;
+}
+
+/* Регистрация / Вход */
+
+form #reg {
+    width:40%;
+    float: left;
+    padding: 15px;
+    background-color:#f37a7a;
+    cursor: pointer;
+    border-radius:10px;
+    margin-top: 15px;
+    font-size: 1em;
+    color: #fff;    
+}
+
+#SignUp #popular article {
+    width: 25%;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-right: 2%;
+    margin-top: 10px;
+    min-height: 200px;
+}
+
+#TitleReg {
+    margin-bottom: 20px;
+}
+
+#page-wrap img{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 10px;
+}
+
+#page-wrap .RegistrTitle{
+    margin-right: 50px;
+    font-size: 2em;
+    font-family: Comic Sans MS, sans-serif;
+    color: silver;
+}
+
+#ButtonReg {
+    border: none;
+    margin-bottom: 20px;
+    margin-left: -37%;
+    width: 83%;
+    height: 30px;
+    background-color:#f37a7a;
+    cursor: pointer;
+    border-radius:5px;
+    margin-top: 15px;
+    font-size: 1em;
+    color: #fff;
+}
+
+#ButtonReg:hover {
+    background-color: #7feb6d;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+#username{
+    margin-top: -40px;
+}
+
+.logName{
+    padding: 5px;
+    width: 50%;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-right: 2%;
+    margin-top: 10px;
+    min-height: 30px;
+}
+
+input.logName:focus {
+    border: 1px solid #f58b8b;
+}
+
+#TitleReg {
+    margin-top: 2%;
+}
 
 /*Центральный блок нашего сайта*/
 

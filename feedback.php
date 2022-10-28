@@ -13,27 +13,27 @@
     
 <div id = "page-wrap">
 <header>
-    <a href = "index.html" title = "На главную" id = "logo">Sport-Line</a>
-    <span class="contact"><a href="about.html" title="Информация о нас">О нас</a></span>
+    <a href = "index.php" title = "На главную" id = "logo">Sport-Line</a>
+    <span class="contact"><a href="about.php" title="Информация о нас">О нас</a></span>
     <input type = "text" class = "field" placeholder = "Помощь по сайту: "/>
     <span class = "right">
-        <span class="contact"><a href="reg.html" title = "Зарегистрироваться">Регистрация</a></span>
-        <span class = "contact"><a href="auth.html" title="Войти">Вход</a></span>
+        <span class="contact"><a href="reg.php" title = "Зарегистрироваться">Регистрация</a></span>
+        <span class = "contact"><a href="auth.php" title="Войти">Вход</a></span>
     </span>
 </header>
-	<div class = "clear"><br/></div>
+    <div class = "clear"><br/></div>
     <center>
         <div id = "menu">Разделы<hr/></div>
         <div id = "menuHrefs">
-            <a href = "about.html">О нас</a>
-            <a href = "feedback.html">Обратная связь</a>
-            <a href = "auth.html">Вход</a>
-            <a href = "reg.html">Регистрация</a>
+            <a href = "about.php">О нас</a>
+            <a href = "feedback.php">Обратная связь</a>
+            <a href = "auth.php">Вход</a>
+            <a href = "reg.php">Регистрация</a>
         </div>
     </center>
     <div id="wrapper">
         <div id="popular">
-        <form action=""method="post" >
+        <form action="php/addReview.php" method="POST" >
         <label for="subject">Тема сообщения</label>
         <input type="text" id="subject" name="subject" placeholder="Тема соообщения" />
         <label for="email">Email</label>

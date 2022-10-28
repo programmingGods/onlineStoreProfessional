@@ -13,12 +13,12 @@
     
 <div id = "page-wrap">
 <header>
-    <a href = "index.html" title = "На главную" id = "logo">Sport-Line</a>
-    <span class="contact"><a href="about.html" title="Информация о нас">О нас</a></span>
+    <a href = "index.php" title = "На главную" id = "logo">Sport-Line</a>
+    <span class="contact"><a href="about.php" title="Информация о нас">О нас</a></span>
     <input type = "text" class = "field" placeholder = "Помощь по сайту: "/>
     <span class = "right">
-    <span class="contact"><a href="reg.html" title = "Зарегистрироваться">Регистрация</a></span>
-    <span class = "contact"><a href="auth.html" title="Войти">Вход</a></span>
+        <span class="contact"><a href="reg.php" title = "Зарегистрироваться">Регистрация</a></span>
+        <span class = "contact"><a href="auth.php" title="Войти">Вход</a></span>
     </span>
 </header>
     <center>
@@ -27,12 +27,12 @@
         <div id="SignUp">
             <div id="popular">
                 <article>
-                    <h3 id="TitleReg">Вход</h3>  
-                    <input type="text" class = "logName" id="username" placeholder="Логин" />
-                    <br>
+                    <h3 id="TitleReg">Вход</h3> 
+                    <form action="index.php">
+                        <input type="text" class = "logName" id="username" placeholder="Логин" />
+                        <br>
                         <input type="password" class="logName" name="password" placeholder="Пароль" />
-                    <br>
-                    <form action="index.html">
+                        <br>
                         <button id="ButtonReg">Войти</button>
                     </form>
                 </article>

@@ -214,7 +214,7 @@ article {
 #about_us { 
     width: 100%;
     float: left;
-    background-color: #fafafa
+    background-color: #fafafa;
     border-radius: 5px;
     border: 1px solid silver;
     box-sizing: border-box;
@@ -257,7 +257,7 @@ form input {
     width: 40%;
 }
 
-form input: focus, form textarea: focus {border: 2px solid #f58b8b}
+form input:focus, form textarea:focus {border: 2px solid #f58b8b}
 
 form textarea{
     width: 60%;
@@ -281,8 +281,8 @@ form #send {
     color: #fff;    
 }
 
-form #send: hover {
-    background-color: bdf37a;
+form #send:hover {
+    background-color: #bdf37a;
 }
 
 /* Регистрация / Вход */
@@ -331,7 +331,7 @@ form #reg {
 #ButtonReg {
     border: none;
     margin-bottom: 20px;
-    margin-left: -37%;
+    margin-left: -30%;
     width: 83%;
     height: 30px;
     background-color:#f37a7a;
@@ -350,19 +350,15 @@ form #reg {
     -ms-transition: all.6s ease;
 }
 
-#username{
-    margin-top: -40px;
-}
-
-.logName{
+form input.logName{
     padding: 5px;
-    width: 50%;
+    width: 90%;
     border: 1px solid silver;
     box-sizing: border-box;
     border-radius: 5px;
     background-color: #fafafa;
-    margin-right: 2%;
-    margin-top: 10px;
+    margin-left: -10%;
+    margin-top: 2%;
     min-height: 30px;
 }
 

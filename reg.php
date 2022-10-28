@@ -12,33 +12,33 @@
 <body>
 <div id = "page-wrap">
 <header>
-    <a href = "index.html" title = "На главную" id = "logo">Sport-Line</a>
-    <span class="contact"><a href="about.html" title="Информация о нас">О нас</a></span>
+    <a href = "index.php" title = "На главную" id = "logo">Sport-Line</a>
+    <span class="contact"><a href="about.php" title="Информация о нас">О нас</a></span>
     <input type = "text" class = "field" placeholder = "Помощь по сайту: "/>
     <span class = "right">
-        <span class="contact"><a href="reg.html" title = "Зарегистрироваться">Регистрация</a></span>
-        <span class = "contact"><a href="auth.html" title="Войти">Вход</a></span>
+        <span class="contact"><a href="reg.php" title = "Зарегистрироваться">Регистрация</a></span>
+        <span class = "contact"><a href="auth.php" title="Войти">Вход</a></span>
     </span>
-    </header>
+</header>   
     <center>
         <img src="https://cdn3.iconfinder.com/data/icons/education-and-school-8/48/Winner-512.png" alt="Sport-Line" title="Sport-Line" class="registrTitle"/>
         <label class="RegistrTitle">Sport-Line</label>
         <div id="SignUp">
+            
             <div id="popular">
                 <article> 
                     <h3 id="TitleReg">Регистрация</h3>
-                    <input type="email" class="logName" id="username" placeholder="Имя пользователя"/>
-                    <input type="text" class="logName" name="login" placeholder="Логин"/>
-                    <input type="password" class="logName" name="password" placeholder="Пароль"/>
-                    <form action="index.html">
+                    <form action="php/addClient.php" method="POST">
+                        <input type="text" class="logName" name="username" placeholder="Имя пользователя"/>
+                        <input type="text" class="logName" name="login" placeholder="Логин"/>
+                        <input type="password" class="logName" name="password" placeholder="Пароль"/>
                         <button id="ButtonReg">Зарегистрироваться</button>
                     </form>
                 </article>
-            </div>
+            </div>    
         </div>
-    </center>
+    </center>                
 </div>
-
 <footer>
     <span class = "left">Все права защищены &2022</span>
     <span class= "right">Соц. кнопки<img src = "img/VK.png" alt = "Группа ВКонтакте" title = "Группа ВКонтакте"/></span>

@@ -35,25 +35,25 @@
         <div id="popular">
             <h2>Популярное</h2>
             <article>
-                <img src="img/jacket_for_boys.jpg" alt="Куртка утеплённая для мальчиков Glissade" title="Куртка утеплённая для мальчиков Glissade" />
+                <img src="img/istockphoto-1350420536-612x612.jpg" alt="Куртка утеплённая для мальчиков Glissade" title="Куртка утеплённая для мальчиков Glissade" />
                 <h3>5199 &#8381</h3>
                 <p>Куртка утеплённая для мальчиков Glissade</p>
                 <a href"article" title="Добавить в корзину">В корзину</a>
             </article>
             <article>
-                <img src="img/warm_boots_for_men.jpg" alt="Ботинки утепленные мужские Northland Reisen Mid Ltr" title="Ботинки утепленные мужские Northland Reisen Mid Ltr" />
+                <img src="img/istockphoto-885967704-612x612.jpg" alt="Ботинки утепленные мужские Northland Reisen Mid Ltr" title="Ботинки утепленные мужские Northland Reisen Mid Ltr" />
                 <h3>8599 &#8381</h3>
                 <p>Ботинки мужские Northland Reisen Mid Ltr</p>
                 <a href"article" title="Добавить в корзину">В корзину</a>
             </article>
             <article>
-                <img src="img/jacket_for_men.jpg" alt="Куртка утепленная мужская Protest" title="Куртка утепленная мужская Protest" />
+                <img src="img/istockphoto-498658044-612x612.jpg" alt="Куртка утепленная мужская Protest" title="Куртка утепленная мужская Protest" />
                 <h3>11999 &#8381</h3>
                 <p>Куртка утепленная мужская Protest</p>
                 <a href"article" title="Добавить в корзину">В корзину</a>
             </article>
             <article>
-                <img src="img/jacket_for_women.jpg" alt="Куртка утепленная женская Termit" title="Куртка утепленная женская Termit" />
+                <img src="img/istockphoto-1364031095-612x612.jpg" alt="Куртка утепленная женская Termit" title="Куртка утепленная женская Termit" />
                 <h3>4999 &#8381</h3>
                 <p>Куртка утепленная женская Termit</p>
                 <a href"article" title="Добавить в корзину">В корзину</a>
@@ -75,27 +75,27 @@
             <article>
                 <img src="img/sportswear.png" alt="Одежда" title="Одежда" />
                 <h3>Одежда</h3>
-                <a href"article" title="Смотреть далее">Смотреть далее</a>
+                <a href= "views/categories/clothes.php" title="Смотреть далее">Смотреть далее</a>
             </article>
             <article>
                 <img src="img/shoes.png" alt="Обувь" title="Обувь" />
                 <h3>Обувь</h3>
-                <a href"article" title="Смотреть далее">Смотреть далее</a>
+                <a href = "views/categories/shoes.php" title="Смотреть далее">Смотреть далее</a>
             </article>
             <article>
                 <img src="img/uniforms.png" alt="Экипировка" title="Экипировка" />
                 <h3>Экипировка</h3>
-                <a href"article" title="Смотреть далее">Смотреть далее</a>
+                <a href = "views/categories/equipment.php" title="Смотреть далее">Смотреть далее</a>
             </article>
             <article id = "leftArticle">
                 <img src="img/equipment.png" alt="Снаряды" title="Снаряды" />
                 <h3>Снаряды</h3>
-                <a href"article" title="Смотреть далее">Смотреть далее</a>
+                <a href = "views/categories/missiles.php" title="Смотреть далее">Смотреть далее</a>
             </article>
             <article>
                 <img src="img/nutrition.png" alt="Питание" title="Питание" />
                 <h3>Питание</h3>
-                <a href"article" title="Смотреть далее">Смотреть далее</a>
+                <a href = "views/categories/nutrition.php" title="Смотреть далее">Смотреть далее</a>
             </article>
         </div>
     </div>

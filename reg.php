@@ -32,6 +32,7 @@
                         <input type="text" class="logName" name="username" placeholder="Имя пользователя"/>
                         <input type="text" class="logName" name="login" placeholder="Логин"/>
                         <input type="password" class="logName" name="password" placeholder="Пароль"/>
+                        <input type="password" class="logName" name="repeatPassword" placeholder="Повторите пароль"/>
                         <button id="ButtonReg">Зарегистрироваться</button>
                     </form>
                 </article>

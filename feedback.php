@@ -34,15 +34,15 @@
     <div id="wrapper">
         <div id="popular">
         <form action="php/addReview.php" method="POST" >
-        <label for="subject">Тема сообщения</label>
-        <input type="text" id="subject" name="subject" placeholder="Тема соообщения" />
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="adress@gmail.com" />
-        <label for="name">Введите ваше имя</label>
-        <input type="text" id="name" name="name" placeholder="Введите ваше имя" />
-        <label for="subject">Введите ваше сообщение</label>
-        <textarea placeholder="Введите ваше сообщение" id="message" name="message"> </textarea>
-        <input type="submit" value="Отправить" id="send" name="send" />
+            <label for="subject">Тема сообщения</label>
+            <input type="text" id="subject" name="subject" placeholder="Тема соообщения" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="adress@gmail.com" />
+            <label for="name">Введите ваше имя</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" />
+            <label for="subject">Введите ваше сообщение</label>
+            <textarea placeholder="Введите ваше сообщение" id="message" name="message"></textarea>
+            <input type="submit" value="Отправить" id="send" name="send" />
         </form>
         </div>
     </div>

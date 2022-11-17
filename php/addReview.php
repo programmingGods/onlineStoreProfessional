@@ -78,7 +78,7 @@ if(!hasLetter($message)){ //хотя бы одна буква в сообщен�
 }
 
 //Подключение к базе данных
-$mysql = new mysqli('sql12.freesqldatabase.com', 'sql12529693', 'KqcyYuufFI', 'sql12529693');
+require("database.php");
 $mysql -> set_charset('utf8mb4');
 
 //Отправка данных в базу

@@ -38,6 +38,17 @@ function hasLetter($string){
     return false;
 }
 
+//функция проверки наличия цифры в слове
+function hasDigit($string){
+    $digits = '0123456789';
+    for($i = 0; $i < mb_strlen($string); $i++){
+        if(strpos($digits, $string[$i])){
+            return true;
+        }
+    }
+    return false;
+}
+
 if(mb_strlen($password) < 8){ //не менее 8 символов в пароле
     exit("Пароль должен состоять не менее, чем из 8 символов");
 }
@@ -46,9 +57,7 @@ if(mb_strlen($password) > 50){ //не более 50 символов в паро
     exit("Пароль должен состоять не более, чем из 50 символов");
 }
 
-if(!strpos($password, '0') && !strpos($password, '1') && !strpos($password, '2') && !strpos($password, '3') && !strpos($password, '4') &&
-   !strpos($password, '5') && !strpos($password, '6') && !strpos($password, '7') && !strpos($password, '8') && !strpos($password, '9')) 
-{ //хотя бы одна цифра в пароле
+if(!hasDigit($password)){ //хотя бы одна цифра в пароле
     exit("Пароль должен содержать хотя бы одну цифру");
 }
 
@@ -85,7 +94,7 @@ if(!hasLetter($login)){ //хотя бы одна буква в логине
 }
 
 //Подключение к базе данных
-$mysql = new mysqli('sql12.freesqldatabase.com', 'sql12529693','KqcyYuufFI','sql12529693');
+require("database.php");
 $mysql -> set_charset('utf8');
 
 //Проверка существования пользователя с таким именем

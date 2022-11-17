@@ -110,8 +110,13 @@ input[type=text].field:focus {
 }
 
 /*Основные стили для сайта*/
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-article {
+.article {
     margin-bottom: 10px;
 }
 
@@ -135,6 +140,8 @@ article {
 #wrapper h2 {
     color: #666;
     font-family: Comic Sans MS, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 #wrapper h3 {
@@ -153,6 +160,7 @@ article {
     padding: 5px;
     background-color: #ed7b7b;
     margin-left: 5%;
+    margin-right: 5%;
     border-radius: 5px;
     color: #fff;
     float: left;
@@ -168,8 +176,9 @@ article {
     box-sizing: border-box;
     border-radius: 5px;
     background-color: #fafafa;
-    margin-right: 2%;
-    margin-top: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 2%;
     min-height: 435px;
 }
 
@@ -189,13 +198,14 @@ article {
 
 #wrapper #productCategory article {
     float: left;
-    width: 31.333%;
+    width: 31.3%;
     border: 1px solid silver;
     box-sizing: border-box;
     border-radius: 5px;
     background-color: #fafafa;
-    margin-right: 2%;
-    margin-top: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 20px;
     min-height: 400px;
 }
 
@@ -207,7 +217,32 @@ article {
     margin-bottom: 10px;
 }
 
+#wrapper #productCategory article a {
+    float:none;
+    margin-left: 15%;
+    margin-right: 15%;
+}
 #wrapper a:hover {background-color: #7feb6d;}
+
+#ButtonMore {
+    border: none;
+    margin-bottom: 20px;
+    background-color:#f37a7a;
+    cursor: pointer;
+    border-radius:5px;
+    margin-top: 15px;
+    font-size: 1em;
+    color: #fff;
+    padding: 5px;
+}
+
+#ButtonMore:hover {
+    background-color: #7feb6d;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
 
 /* Стили для странички о нас */
 
@@ -267,7 +302,7 @@ form textarea{
     border: 2px solid silver;
     border-radius: 10px;
     padding: 10px;
-    font-size:1.7em;
+    font-size: 1.7em;
 }
 
 form #send {
@@ -377,7 +412,7 @@ input.logName:focus {
     padding: 2% 0;
     border-bottom: 2px solid silver; 
     border-top: 2px solid silver; 
-    margin: 20px 0;
+    
     float: left;
     background: url('../img/bnr-background.jpg') repeat-x center 0;
     height: 300px;
@@ -408,7 +443,7 @@ input.logName:focus {
 footer {
     padding: 1%;
     border-top: 2px solid silver;
-    margin-top: 10px; 
+    
     padding-bottom: 2%;
 }
 

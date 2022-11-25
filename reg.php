@@ -21,10 +21,21 @@
                 <div id="popular">
                     <article>
                         <h3 id="TitleReg">Регистрация</h3>
+                        <p>
+                            <?php session_start();
+                            echo $_SESSION['messageError'];
+                            ?>
+                        </p>
                         <form action="php/addClient.php" method="POST">
-                            <input type="text" class="logName" name="username" placeholder="Имя пользователя" />
-                            <input type="text" class="logName" name="login" placeholder="Логин" />
-                            <input type="password" class="logName" name="password" placeholder="Пароль" />
+                            <input type="text" class="logName" name="username" placeholder="Имя пользователя" value = "<?php session_start();
+                            echo $_SESSION['usernameSession'];
+                            ?>"/>
+                            <input type="text" class="logName" name="login" placeholder="Логин" value = "<?php session_start();
+                            echo $_SESSION['loginSession'];
+                            session_destroy();
+                            ?>" />
+                            <input type="password" class="logName" name="password" 
+                            placeholder="Пароль" />
                             <input type="password" class="logName" name="repeatPassword" placeholder="Повторите пароль" />
                             <button id="ButtonReg">Зарегистрироваться</button>
                         </form>

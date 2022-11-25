@@ -345,6 +345,11 @@ form #reg {
     min-height: 200px;
 }
 
+#SignUp #popular p {
+    color: red;
+    margin-bottom: 2%;
+}
+
 #TitleReg {
     margin-bottom: 20px;
 }
@@ -457,6 +462,6 @@ footer img {width: 5%; float: left; margin-right: 5px}
 footer, #page-wrap:after {height: 10px}
 
 #page-wrap {
-    min-height: 92%;
+    min-height: 93.5%;
     margin-bottom: -10px;
 }

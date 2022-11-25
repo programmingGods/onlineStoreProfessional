@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.2
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Nov 15, 2022 at 11:28 AM
--- Server version: 5.7.24
--- PHP Version: 8.0.1
+-- Host: bq1xy12lmbv7wnjcxpnz-mysql.services.clever-cloud.com:3306
+-- Generation Time: Nov 25, 2022 at 04:25 PM
+-- Server version: 8.0.22-13
+-- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sportline`
+-- Database: `bq1xy12lmbv7wnjcxpnz`
 --
 
 -- --------------------------------------------------------
@@ -28,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `categories` (
-  `id` int(10) NOT NULL,
+  `id` int NOT NULL,
   `name` varchar(100) NOT NULL,
   `img` varchar(300) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -51,7 +52,7 @@ INSERT INTO `categories` (`id`, `name`, `img`) VALUES
 --
 
 CREATE TABLE `clients` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `username` text NOT NULL,
   `login` text NOT NULL,
   `password` text NOT NULL
@@ -62,18 +63,18 @@ CREATE TABLE `clients` (
 --
 
 INSERT INTO `clients` (`id`, `username`, `login`, `password`) VALUES
-(12, 'artem', 'Artemka', 'qwe123'),
-(13, 'Alexander', 'Sasha12', 'qwe123'),
-(14, 'myslitel666', 'Nikita', 'dgfgd'),
-(24, 'Виталий Масленников', 'Vitaly', 'gjhrthtrhtrh'),
-(25, 'Артём Курдин', 'artem', 'hgfhghgd'),
-(26, 'Тагир', 'Tagir45', 'dataphp'),
-(27, 'Николай', 'Nikolay56', 'somePassword'),
-(28, 'Иван Иванов', 'Vanya', 'somePassword'),
-(29, 'Сергей', 'Sergey', 'somePassword'),
-(30, 'Владимир Иванович', 'Vladimir1970', 'somePassword'),
-(34, 'Иванов Иван', 'ivani.ivanov@gmail', '12345678'),
-(35, 'Tagir', 'Tagir45', 'fghfgh'),
+(12, 'artem', 'Artemka', 'qGbgwe123'),
+(13, 'Alexander', 'Sasha12', 'qwGhtbe123'),
+(14, 'myslitel666', 'Nikita', 'dgGfgHjd789'),
+(24, 'Виталий Масленников', 'Vitaly', 'gYUj6776htrhtrh'),
+(25, 'Артём Курдин', 'artem', 'hFgf5hhd830'),
+(26, 'Тагир', 'Tagir45', 'Dataphp621'),
+(27, 'Николай', 'Nikolay56', 'some54Password'),
+(28, 'Иван Иванов', 'Vanya', 'somePassw781ord'),
+(29, 'Сергей', 'Sergey', 'somePassw321ord'),
+(30, 'Владимир Иванович', 'Vladimir1970', 'somePassword864!'),
+(34, 'Иванов Иван', 'ivani.ivanov@gmail', '12gfdg67@8'),
+(35, 'Tagir', 'Tagir45', 'fFgghfgh23'),
 (36, 'user1', 'user1', 'qWERTYUIOP[]ASDFGHJKL;&#39;ZXCVBNM,.1234567890');
 
 -- --------------------------------------------------------
@@ -83,12 +84,12 @@ INSERT INTO `clients` (`id`, `username`, `login`, `password`) VALUES
 --
 
 CREATE TABLE `products` (
-  `id` int(10) NOT NULL,
+  `id` int NOT NULL,
   `name` varchar(100) NOT NULL,
-  `price` int(10) UNSIGNED NOT NULL,
+  `price` int UNSIGNED NOT NULL,
   `img` varchar(300) NOT NULL,
-  `number_orders` int(10) UNSIGNED DEFAULT NULL,
-  `id_category` int(10) NOT NULL
+  `number_orders` int UNSIGNED DEFAULT NULL,
+  `id_category` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -128,8 +129,8 @@ INSERT INTO `products` (`id`, `name`, `price`, `img`, `number_orders`, `id_categ
 --
 
 CREATE TABLE `reviews` (
-  `id` int(11) NOT NULL,
-  `client_id` int(11) DEFAULT NULL,
+  `id` int NOT NULL,
+  `client_id` int DEFAULT NULL,
   `topic` text NOT NULL,
   `email` text NOT NULL,
   `name` text NOT NULL,
@@ -189,25 +190,25 @@ ALTER TABLE `reviews`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `clients`
 --
 ALTER TABLE `clients`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `reviews`
 --
 ALTER TABLE `reviews`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Constraints for dumped tables
